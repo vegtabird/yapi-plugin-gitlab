@@ -352,8 +352,12 @@ class gitlabController extends baseController{
                     if (!Array.isArray(array) || array.length < 1) {
                         reject({message: 'not find ' + tag});
                     } else {
-                        if (tag === 'groups' && name === array[0].name) {
-                            resolve(array[0]);
+                        if (tag === 'groups') {
+                            for(let i = 0; i < array.length; i++){
+                              if(name === array[i].name){
+                                resolve(array[0]);
+                              }
+                            }
                         } else {
                             for (let i = 0; i < array.length; i++) {
                                 let nameWithSpace = array[i].name_with_namespace.replace(new RegExp(' ','gm'), '');

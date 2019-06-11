@@ -1,15 +1,15 @@
 {
-  "name": "yapi-plugin-gitlab",
+  "name": "yapi-plugin-gitlab-modify",
   "version": "1.0.1",
   "description": "devops with gitlab for yapi",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/cyj0122/yapi-plugin-gitlab",
+  "homepage": "https://github.com/vegtabird/yapi-plugin-gitlab",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:cyj0122/yapi-plugin-gitlab.git"
+    "url": "git@github.com:vegtabird/yapi-plugin-gitlab.git"
   },
   "author": {
     "name": "cyj0122",
