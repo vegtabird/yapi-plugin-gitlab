@@ -165,7 +165,7 @@ class gitlabController extends baseController{
      */
     getOptions() {
         for (let i = 0; i < yapi.WEBCONFIG.plugins.length; i++) {
-            if (yapi.WEBCONFIG.plugins[i].name === 'gitlab') {
+            if (yapi.WEBCONFIG.plugins[i].name === 'gitlab-modify') {
                 return yapi.WEBCONFIG.plugins[i].options;
             }
         }
@@ -355,7 +355,7 @@ class gitlabController extends baseController{
                         if (tag === 'groups') {
                             for(let i = 0; i < array.length; i++){
                               if(name === array[i].name){
-                                resolve(array[0]);
+                                resolve(array[i]);
                               }
                             }
                         } else {
